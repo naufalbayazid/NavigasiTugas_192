@@ -66,12 +66,31 @@ fun TampilData(
                 Column {
                     Text(
                         text = item.first.uppercase(),
-                        fontSize = 16.sp
+                        fontSize = 16.sp // pakai sp
                     )
                     Text(
                         text = item.second,
                         fontWeight = FontWeight.Bold,
                         fontFamily = FontFamily.Cursive,
-                        fontSize = 22.sp
+                        fontSize = 22.sp // pakai sp
                     )
-                }}
+                }
+                HorizontalDivider(thickness = 1.dp, color = Color.Cyan)
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = onBackBtnClick
+            ) {
+                Text(text = stringResource(id = R.string.back))
+            }
+            Spacer(modifier = Modifier.height(15.dp))
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = OnSubmitBtnClick
+            ) {
+                Text(text = stringResource(id = R.string.form))
+            }
+        }
+    }
+}
