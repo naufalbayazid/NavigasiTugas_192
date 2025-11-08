@@ -43,3 +43,17 @@ fun DataApp(
                 )
             }
 
+            composable(route = Navigasi.Detail.name) {
+                TampilData(
+                    onBackBtnClick = {
+                        navController.popBackStack(
+                            route = Navigasi.Homepage.name,
+                            inclusive = false
+                        )
+                    },
+                    OnSubmitBtnClick = {
+                        navController.navigate(route = Navigasi.Formulirku.name)
+                    }
+                )
+            }
+
