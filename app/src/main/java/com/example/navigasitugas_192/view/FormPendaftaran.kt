@@ -76,3 +76,21 @@ fun Form(modifier: Modifier = Modifier,
                     )
                     .padding(vertical = 24.dp)
             ) {
+                Text(
+                    text = "Formulir Pendaftaran",
+                    color = Color.White,
+                    fontSize = 22.sp,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth()
+                )
+
+            }
+            Card (
+                modifier = Modifier
+                    .padding(20.dp)
+                    .fillMaxWidth(0.9f),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                shape = RoundedCornerShape(20.dp),
+                elevation = CardDefaults.cardElevation(8.dp)
+            ) {
