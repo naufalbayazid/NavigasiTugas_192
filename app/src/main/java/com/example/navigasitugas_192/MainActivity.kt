@@ -44,4 +44,4 @@ fun GreetingPreview() {
     NavigasiTugas_192Theme {
         Greeting("Android")
     }
-}
+} 
